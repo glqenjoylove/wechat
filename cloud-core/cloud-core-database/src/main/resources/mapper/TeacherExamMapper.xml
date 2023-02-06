@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ection.platform.system.db.dao.TeacherExamMapper">
+  <resultMap id="BaseResultMap" type="com.mywg.core.database.model.TeacherExam">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="bm_url" jdbcType="VARCHAR" property="bmUrl" />
+    <result column="start_bm_date" jdbcType="TIMESTAMP" property="startBmDate" />
+    <result column="end_bm_date" jdbcType="TIMESTAMP" property="endBmDate" />
+    <result column="start_qr_date" jdbcType="TIMESTAMP" property="startQrDate" />
+    <result column="end_qr_date" jdbcType="TIMESTAMP" property="endQrDate" />
+    <result column="qr_url" jdbcType="VARCHAR" property="qrUrl" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="bm_status" jdbcType="INTEGER" property="bmStatus" />
+    <result column="qr_status" jdbcType="INTEGER" property="qrStatus" />
+  </resultMap>
+</mapper>

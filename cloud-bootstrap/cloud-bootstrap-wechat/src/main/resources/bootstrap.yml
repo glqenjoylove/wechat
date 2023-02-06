@@ -1,0 +1,29 @@
+# 服务端口
+server:
+  port: 10001
+  servlet:
+    context-path: /wechat
+    session:
+      timeout: 7200
+  tomcat:
+    uri-encoding: UTF-8
+    max-http-form-post-size: -1
+  max-http-header-size: -1
+
+# 应用名称，环境配置，重写覆盖配置，Nacos注册，配置中心
+spring:
+  application:
+    name: service-wechat
+  profiles:
+    active: @profiles.active@
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: @nacos.server@
+        ip: @nacos.discovery@
+      config:
+        server-addr: @nacos.server@
+        file-extension: yaml
+
